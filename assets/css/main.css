@@ -37,6 +37,18 @@ body {
   color: var(--color-default);
 }
 
+/* custom */
+
+.text-oranges {
+  color: var(--color-primary);
+}
+
+.bg-oranges {
+  background-color: var(--color-primary);
+}
+
+/* akhir custom */
+
 a {
   color: var(--color-primary);
   text-decoration: none;

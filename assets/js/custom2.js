@@ -1,5 +1,6 @@
 const searchInput = document.getElementById("searchInput");
 const cards = document.querySelectorAll(".itemss");
+const tabPannes = document.querySelectorAll(".tab-paness");
 const pagination = document.querySelector(".pagination");
 
 const itemsPerPage = 5; // Jumlah card yang ingin ditampilkan per halaman
@@ -13,6 +14,15 @@ function displayCards(startIndex, endIndex) {
     } else {
       card.style.display = "none"; // Menyembunyikan card di luar indeks halaman
     }
+  });
+}
+
+function displayFilteredCards() {
+  const resultContainer = document.querySelector(".row.gy-5.tab-paness"); // Ganti dengan selektor yang sesuai
+  resultContainer.innerHTML = ""; // Mengosongkan kontainer sebelum menambahkan kartu-kartu hasil pencarian
+
+  filteredCards.forEach((card) => {
+    resultContainer.appendChild(card.cloneNode(true)); // Menambahkan kartu yang cocok ke dalam kontainer
   });
 }
 
@@ -49,7 +59,15 @@ searchInput.addEventListener("input", function () {
 
   currentPage = 1; // Kembali ke halaman pertama saat pencarian diubah
 
-  setupPagination(true); // Mengatur pagination dengan hasil pencarian
+  if (filteredCards.length > 0) {
+    displayFilteredCards();
+    setupPagination(true);
+    console.log("OK 1");
+  } else {
+    displayCards(0, itemsPerPage);
+    setupPagination(false);
+    console.log("OK 2");
+  }
 });
 
 setupPagination(); // Memanggil fungsi untuk setup pagination saat halaman dimuat

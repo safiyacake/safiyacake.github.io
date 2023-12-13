@@ -120,7 +120,8 @@ setTimeout(() => {
   });
 }, 1000);
 
-searchInput.addEventListener("input", function () {
+searchInput.addEventListener("input", function (e) {
+  e.preventDefault();
   const searchText = searchInput.value.toLowerCase();
 
   cards.forEach((card) => {

@@ -91,9 +91,18 @@ setTimeout(() => {
 
   // kaa
   kab.forEach((kue) => {
+    const titleElementkab = kue.querySelector("h4");
     const descriptionElementkab = kue.querySelector("p");
     if (descriptionElementkab) {
       let description = descriptionElementkab.innerText.toLowerCase();
+
+      if (titleElementkab.innerText.toLowerCase() === "kebab mini") {
+        textKelasB = "(Rp. 1500)";
+      } else if (titleElementkab.innerText.toLowerCase() === "kebab medium") {
+        textKelasB = "(Rp. 2000)";
+      } else if (titleElementkab.innerText.toLowerCase() === "kebab premium") {
+        textKelasB = "(Rp. 3000)";
+      }
 
       // Menambahkan variabel textKelasA ke dalam description
       description += textKelasB;
@@ -106,10 +115,18 @@ setTimeout(() => {
 
   // kaa
   kac.forEach((kue) => {
+    const titleElementkac = kue.querySelector("h4");
     const descriptionElementkac = kue.querySelector("p");
     if (descriptionElementkac) {
       let description = descriptionElementkac.innerText.toLowerCase();
 
+      if (titleElementkac.innerText.toLowerCase() === "kebab mini") {
+        textKelasC = "(Rp. 1500)";
+      } else if (titleElementkac.innerText.toLowerCase() === "kebab medium") {
+        textKelasC = "(Rp. 2000)";
+      } else if (titleElementkac.innerText.toLowerCase() === "kebab premium") {
+        textKelasC = "(Rp. 3000)";
+      }
       // Menambahkan variabel textKelasA ke dalam description
       description += textKelasC;
 

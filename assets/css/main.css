@@ -47,6 +47,18 @@ body {
   background-color: var(--color-primary);
 }
 
+/* Gaya untuk perangkat handphone dengan lebar layar maksimum 768px */
+@media screen and (max-width: 768px) {
+  /* Tempatkan gayamu di sini */
+  .pad-x {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .text-left-mobile {
+    text-align-last: left !important;
+  }
+}
 /* akhir custom */
 
 a {
@@ -921,6 +933,7 @@ section {
   font-family: var(--font-secondary);
   color: #8d8d9b;
   margin-bottom: 5px;
+  text-transform: capitalize;
 }
 
 .menu .tab-content .menu-item .price {

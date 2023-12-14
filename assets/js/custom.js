@@ -32,6 +32,7 @@ setTimeout(() => {
   // kma
   kma.forEach((kue) => {
     const descriptionElementkma = kue.querySelector("p");
+    const titleElementkma = kue.querySelector("h4");
     if (descriptionElementkma) {
       let description = descriptionElementkma.innerText.toLowerCase();
 
@@ -46,6 +47,7 @@ setTimeout(() => {
 
   // kmb
   kmb.forEach((kue) => {
+    const titleElementkmb = kue.querySelector("h4");
     const descriptionElementkmb = kue.querySelector("p");
     if (descriptionElementkmb) {
       let description = descriptionElementkmb.innerText.toLowerCase();
@@ -61,9 +63,14 @@ setTimeout(() => {
 
   // kmc
   kmc.forEach((kue) => {
+    const titleElementkmc = kue.querySelector("h4");
     const descriptionElementkmc = kue.querySelector("p");
     if (descriptionElementkmc) {
       let description = descriptionElementkmc.innerText.toLowerCase();
+
+      if (titleElementkmc.innerText.toLowerCase() === "bolu anak ayam") {
+        textKelasC = "(6.000/pcs)";
+      }
 
       // Menambahkan variabel textKelasA ke dalam description
       description += textKelasC;
@@ -76,6 +83,7 @@ setTimeout(() => {
 
   // kaa
   kaa.forEach((kue) => {
+    const titleElementkaa = kue.querySelector("h4");
     const descriptionElementkaa = kue.querySelector("p");
     if (descriptionElementkaa) {
       let description = descriptionElementkaa.innerText.toLowerCase();
@@ -97,11 +105,11 @@ setTimeout(() => {
       let description = descriptionElementkab.innerText.toLowerCase();
 
       if (titleElementkab.innerText.toLowerCase() === "kebab mini") {
-        textKelasB = "(Rp. 1500)";
+        textKelasB = "(1.500)";
       } else if (titleElementkab.innerText.toLowerCase() === "kebab medium") {
-        textKelasB = "(Rp. 2000)";
+        textKelasB = "(2.000)";
       } else if (titleElementkab.innerText.toLowerCase() === "kebab premium") {
-        textKelasB = "(Rp. 3000)";
+        textKelasB = "(3.000)";
       }
 
       // Menambahkan variabel textKelasA ke dalam description
@@ -121,11 +129,11 @@ setTimeout(() => {
       let description = descriptionElementkac.innerText.toLowerCase();
 
       if (titleElementkac.innerText.toLowerCase() === "kebab mini") {
-        textKelasC = "(Rp. 1500)";
+        textKelasC = "(1500)";
       } else if (titleElementkac.innerText.toLowerCase() === "kebab medium") {
-        textKelasC = "(Rp. 2000)";
+        textKelasC = "(2000)";
       } else if (titleElementkac.innerText.toLowerCase() === "kebab premium") {
-        textKelasC = "(Rp. 3000)";
+        textKelasC = "(3000)";
       }
       // Menambahkan variabel textKelasA ke dalam description
       description += textKelasC;

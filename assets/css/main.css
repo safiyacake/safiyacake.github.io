@@ -47,12 +47,22 @@ body {
   background-color: var(--color-primary);
 }
 
+.logos {
+  display: none;
+}
+
 /* Gaya untuk perangkat handphone dengan lebar layar maksimum 768px */
 @media screen and (max-width: 768px) {
   /* Tempatkan gayamu di sini */
   .pad-x {
     padding-left: 0px !important;
     padding-right: 0px !important;
+  }
+
+  .logos {
+    width: 50vw;
+    display: block;
+    margin-bottom: 2rem;
   }
 
   .text-left-mobile {

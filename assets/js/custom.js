@@ -69,7 +69,23 @@ setTimeout(() => {
       let description = descriptionElementkmc.innerText.toLowerCase();
 
       if (titleElementkmc.innerText.toLowerCase() === "bolu anak ayam") {
-        textKelasC = "(6.000/pcs)";
+        textKelasC = "(6.000/3pcs)";
+      } else if (titleElementkmc.innerText.toLowerCase() === "bolu boneka") {
+        textKelasC = "(2.000/pcs)";
+      } else if (titleElementkmc.innerText.toLowerCase() === "cheese roll") {
+        textKelasC = "(3.500/pcs)";
+      } else if (titleElementkmc.innerText.toLowerCase() === "clorot") {
+        textKelasC = "(3.000/pcs)";
+      } else if (titleElementkmc.innerText.toLowerCase() === "horn") {
+        textKelasC = "(2.500/pcs)";
+      } else if (titleElementkmc.innerText.toLowerCase() === "kue kelepon") {
+        textKelasC = "(2.500/pcs)";
+      } else if (titleElementkmc.innerText.toLowerCase() === "roti abon") {
+        textKelasC = "(2.500/pcs)";
+      } else if (titleElementkmc.innerText.toLowerCase() === "roti buaya") {
+        textKelasC = "(12.000/pcs)";
+      } else {
+        textKelasC = "(mulai dari 2.000)";
       }
 
       // Menambahkan variabel textKelasA ke dalam description
@@ -110,6 +126,8 @@ setTimeout(() => {
         textKelasB = "(2.000)";
       } else if (titleElementkab.innerText.toLowerCase() === "kebab premium") {
         textKelasB = "(3.000)";
+      } else {
+        textKelasB = "(1.500-2.000 /pcs)";
       }
 
       // Menambahkan variabel textKelasA ke dalam description
@@ -134,6 +152,18 @@ setTimeout(() => {
         textKelasC = "(2000)";
       } else if (titleElementkac.innerText.toLowerCase() === "kebab premium") {
         textKelasC = "(3000)";
+      } else if (titleElementkac.innerText.toLowerCase() === "bacang") {
+        textKelasC = "(3000)";
+      } else if (titleElementkac.innerText.toLowerCase() === "bakso ayam tusuk") {
+        textKelasC = "(3000)";
+      } else if (titleElementkac.innerText.toLowerCase() === "otak-otak") {
+        textKelasC = "(10.000/pack)";
+      } else if (titleElementkac.innerText.toLowerCase() === "risoles mayo") {
+        textKelasC = "(2.500/pcs)";
+      } else if (titleElementkac.innerText.toLowerCase() === "sosis solo premium") {
+        textKelasC = "(2.500/pcs)";
+      } else {
+        textKelasC = "(mulai dari 2.000)";
       }
       // Menambahkan variabel textKelasA ke dalam description
       description += textKelasC;
